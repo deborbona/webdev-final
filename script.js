@@ -53,17 +53,23 @@ function createElement(incomingJSON){
   let newRecipeElement = document.createElement("DIV");
   newRecipeElement.classList.add("recipeBox");
 
+  let newTitleLink = document.createElement("A")
+  newTitleLink.href = incomingJSON['recipePage'];
+
   let newRecipeTitle = document.createElement("H3")
   newRecipeTitle.classList.add("recipeTitle");
   newRecipeTitle.innerHTML = incomingJSON['title'];
-  newRecipeTitle.href = incomingJSON['recipePage'];
   newRecipeElement.appendChild(newRecipeTitle);
+  //newTitleLink.appendChild(newRecipeTitle);
+  //newRecipeElement.appendChild(newTitleLink);
 
   let newImage = document.createElement("IMG");
   newImage.classList.add("recipeImage");
   newImage.src = incomingJSON['picture_url'];
   newImage.href = incomingJSON['recipePage'];
-  newRecipeElement.appendChild(newImage);
+  newTitleLink.appendChild(newImage);
+  newRecipeElement.appendChild(newTitleLink);
+  //newRecipeElement.appendChild(newImage);
 
   let newDescription = document.createElement("P")
   newDescription.classList.add("recipeDescription");

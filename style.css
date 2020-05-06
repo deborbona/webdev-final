@@ -50,7 +50,12 @@ h4 {
 
 #directions {
   margin-left: 5%;
-  margin-bottom: 5%;
+}
+
+#self-care {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
 }
 
 .indivImage {
