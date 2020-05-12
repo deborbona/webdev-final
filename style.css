@@ -10,6 +10,26 @@ body {
   box-sizing: border-box;
 }
 
+#welcomeStatement {
+  font-family: 'Roboto', sans-serif;
+}
+
+#recipeButton {
+  font-size: 7vmin;
+  font-weight: bold;
+}
+
+#ingredients {
+  font-family: 'Roboto', sans-serif;
+}
+#directions {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  font-family: 'Roboto', sans-serif;
+}
+
 h3 {
   font-weight: bold;
   text-decoration: underline;
@@ -24,7 +44,6 @@ h4 {
 #title {
   color: #D4AC9F
 }
-
 
 #allRecipes {
   display: grid;
@@ -72,6 +91,10 @@ h4 {
   width: 100%;
   height: 300px;
   object-fit: cover;
+}
+
+.recipeDescription {
+  font-family: 'Roboto', sans-serif;
 }
 
 .recipeBox {
